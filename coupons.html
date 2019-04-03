@@ -318,12 +318,15 @@
                                     </li>
                                 </ul>
                             </li>
+
                             <li>
-                                <a href="coupons.html">
+                                <a href="javascript: void(0);">
                                     <i class="fas fa-money-bill"></i>
                                     <span> Coupons </span>
                                 </a>
                             </li>
+
+
                             <li>
                                 <a href="javascript: void(0);">
                                     <i class="fe-mail"></i>
@@ -458,16 +461,109 @@
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">My Company</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Email</a></li>
-                                            <li class="breadcrumb-item active">Inbox</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Coupons</a></li>
+                                            <li class="breadcrumb-item active">Coupons</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Inbox</h4>
+                                    <h4 class="page-title">Coupons</h4>
+                                    <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#con-close-modal">New Coupons</button>
+
                                 </div>
                             </div>
                         </div>
                         <!-- end page title -->
 
+
+<!-- content below -->
+                        <div>
+                          <div id="con-close-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+                                                                  <div class="modal-dialog">
+                                                                      <div class="modal-content">
+                                                                          <div class="modal-header">
+                                                                              <h4 class="modal-title">New Coupon</h4>
+                                                                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                                          </div>
+                                                                          <div class="modal-body p-4">
+                                                                              <div class="row">
+                                                                                  <div class="col-md-6">
+                                                                                      <div class="form-group">
+                                                                                          <label for="coupon-code" class="control-label">Coupon Code</label>
+                                                                                          <input type="text" class="form-control" id="coupon-code" placeholder="eg: SummerSale19">
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="col-md-6">
+                                                                                      <div class="form-group">
+                                                                                          <label for="coupon-name" class="control-label">Coupon Name</label>
+                                                                                          <input type="text" class="form-control" id="coupon-name" placeholder="eg: Summer Sale 2019">
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="row">
+                                                                                  <div class="col-md-6">
+                                                                                      <div class="form-group">
+                                                                                          <label for="discount" class="control-label">Discount</label>
+                                                                                          <input type="text" class="form-control" id="discount" placeholder="$0.00">
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="row">
+                                                                                  <div class="col-md-6">
+                                                                                      <div class="form-group">
+                                                                                          <label for="apply-to" class="control-label">Apply to</label>
+                                                                                          <select class="custom-select" id="apply-to">
+                                                                                            <option selected="">Choose One</option>
+                                                                                            <option value="all">All services</option>
+                                                                                            <option value="specific">Specific services</option>
+                                                                                        </select>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="row">
+                                                                                  <div class="col-md-6">
+                                                                                      <div class="form-group">
+                                                                                          <label for="valid-from" class="control-label">Valid Between</label>
+                                                                                            <input class="form-control" id="valid-from" type="date" name="date">                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="col-md-6">
+                                                                                      <div class="form-group">
+                                                                                          <label for="valid-to" class="control-label">To</label>
+                                                                                            <input class="form-control" id="valid-to" type="date" name="date">                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="row">
+                                                                                <div class="col-md-6">
+                                                                                  <div class="form-group">
+                                                                                      <label for="limit-use" class="control-label">Limit Uses</label>
+                                                                                      <input type="text" class="form-control" id="limit-use">
+                                                                                  </div>
+                                                                                </div>
+                                                                                <div class="col-md-6">
+                                                                                  <div class="form-group">
+                                                                                    <label class="control-label"></label>
+
+                                                                                      <div class="custom-control custom-checkbox" style="vertical-align: middle;">
+                                                                                          <input type="checkbox" class="custom-control-input" id="unlimitedCheck">
+                                                                                          <label class="custom-control-label" for="unlimitedCheck">Unlimited</label>
+                                                                                      </div>
+
+                                                                                  </div>
+                                                                                </div>
+
+                                                                            </div>
+
+
+
+                                                                          </div>
+                                                                          <div class="modal-footer">
+                                                                              <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Cancel</button>
+                                                                              <button type="button" class="btn btn-info waves-effect waves-light">Create Coupon</button>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+
+
+                      </div>
 
 
 
